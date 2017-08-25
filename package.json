@@ -1,0 +1,51 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Tomasz Kula",
+  "license": "ISC",
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/src/test/setupJest.ts",
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.spec.json"
+      }
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "src",
+      "sql"
+    ]
+  },
+  "devDependencies": {
+    "@types/dotenv": "*",
+    "@types/jest": "*",
+    "@types/express": "*",
+    "concurrently": "*",
+    "husky": "*",
+    "jest": "*",
+    "rimraf": "*",
+    "ts-jest": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "dotenv": "*",
+    "express": "*"
+  }
+}

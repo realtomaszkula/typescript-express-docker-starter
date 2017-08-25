@@ -1,0 +1,50 @@
+{
+	"extends": [
+		"tslint:recommended"
+	],
+	"rules": {
+		"trailing-comma": [
+			true
+		],
+		"quotemark": [
+			true,
+			"single",
+			"avoid-escape"
+		],
+		"interface-name": [
+			false
+		],
+		"ordered-imports": [
+			false
+		],
+		"object-literal-sort-keys": [
+			false
+		],
+		"no-shadowed-variable": true,
+		"no-switch-case-fall-through": true,
+		"no-unused-expression": true,
+		"no-duplicate-variable": true,
+		"curly": true,
+		"class-name": true,
+		"semicolon": [
+			"always"
+		],
+		"triple-equals": true,
+		"member-access": [
+			false
+		],
+		"no-console": [
+			false
+		],
+		"arrow-parens": [
+			false
+		],
+		"typedef": [
+			true,
+			"call-signature",
+			"parameter",
+			"property-declaration",
+			"member-variable-declaration"
+		]
+	}
+}
